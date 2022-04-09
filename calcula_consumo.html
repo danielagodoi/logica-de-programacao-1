@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<h3>Álcool ou Gasolina?</h3>
+
+<script>
+
+var caminhoComGasolina = (480/40);
+var caminhoComAlcool = (300/40)
+
+var precoGasolina = 7.8
+var precoAlcool = 4.9
+
+var distancia = 200
+
+var gasolina = ((distancia/caminhoComGasolina)*precoGasolina);
+var alcool = ((distancia/caminhoComAlcool)*precoAlcool);
+
+document.write("O consumo de gasolina foi de " + caminhoComGasolina + " quilômetros por litro.")
+document.write("<br>")
+document.write("<br>")
+document.write("Já o consumo de álcool foi de " + caminhoComAlcool + " quilômetros por litro.")
+document.write("<br>")
+document.write("<br>")
+document.write("Considerando o preço por litro de combustível, em que o alcool custa R$ " + precoAlcool + "/litro e a gasolina custa R$ " + precoGasolina + "/litro <br>")
+document.write(" e que desejamos percorrer uma distância de " + distancia + "km. Podemos afirmar que o combustível mais vantajoso nessa condição é " )
+
+if (gasolina<alcool){
+document.write("a gasolina.")
+}else if(gasolina>alcool) {
+    document.write("o alcool.")
+}else {
+    document.write("qualquer um.")
+}
+
+
+</script>
+
+
+
+
+
+
