@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+
+<script>
+
+function puloLinha() {
+    document.write("<br><br>")
+}
+
+function mostra(frase) {
+    document.write(frase);
+    puloLinha();
+
+}
+
+var vitorias = parseInt(prompt("Entre com o número de vitórias."));
+var empates = parseInt(prompt("Entre com o número de empates."));
+
+//uma vitoria vale 3 pontos, um empate vale 1 ponto
+
+var pontos = vitorias * 3 + empates;
+
+
+mostra("A quantidade de pontos do seu time é " + pontos + " pontos.")
+
+
+//Nesta segunda parte, queremos que o sistema faça uma comparação em relação ao ano anterior tomando como base 28 pontos (mas pode ser qualquer outro 
+// para isso, basta alterar o número que foi atribuido à variavel pontosAnoAnterior).
+// Ou seja, mais de 28 pontos está melhor, menos está pior e 28 pontos está igual.
+
+var pontosAnoAnterior = 28 
+
+if(pontos > pontosAnoAnterior) {
+    mostra("Seu time melhorou em relação ao ano passado.");
+}
+
+if(pontos < pontosAnoAnterior) {
+    mostra("Seu time piorou em relação ao ano passado.");
+}
+
+if(pontos == pontosAnoAnterior) {
+    mostra("Seu time está igual ao ano passado.");
+}
+
+
+// mostra("Seu time melhorou em relação ao ano passado");
+// mostra("Seu time piorou em relação ao ano passado");
+// mostra("Seu time está igual ao ano passado");
+
+</script>
