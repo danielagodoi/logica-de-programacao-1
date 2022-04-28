@@ -1,4 +1,4 @@
-<meta charset="UTF-8">
+<!-- <meta charset="UTF-8">
 
 <h1>Meu primeiro teste!</h1>
 <br>
@@ -7,5 +7,36 @@ Seria isso um programa? Descubra visitando o Alura <a href="http://www.alura.com
 <script>
 
 alert ("Isso sim é um programa");
+
+</script> -->
+
+
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var idade = parseInt(prompt("Qual é sua idade?"));
+        if(idade<18){
+        mostra("Não pode dirigir!")
+    }else{
+        var temCarteira = prompt("Tem carteira? Responda S ou N");
+
+        if(temCarteira.toUpperCase() == "S"){
+        mostra("Pode dirigir!")
+    }else{
+        mostra("Não pode dirigir!")
+     }
+    }
+
+    
 
 </script>
