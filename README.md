@@ -1,4 +1,4 @@
 # logica-de-programacao-1
 //meu projeto de lógica de programação
 
-curso Alura
+curso @Alura
